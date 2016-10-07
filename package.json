@@ -1,0 +1,48 @@
+{
+  "name": "nl-seed-frontend",
+  "version": "1.0.3",
+  "description": "This project should be used a foundation when starting any new Nightlife AngularJS 1.5x project.",
+  "main": "index.js",
+  "scripts": {
+    "build-dev": "set NL_ENV=Dev && webpack",
+    "dev": "set NL_ENV=Dev && webpack && webpack-dev-server -d --inline --hot",
+    "dev_stable": "set NL_ENV=DevStable && webpack && webpack-dev-server -d --inline --hot",
+    "prod": "set NL_ENV=Prod && webpack && webpack-dev-server -d --inline --hot",
+    "cmp": "tsc --declaration",
+    "cmp_publish": "start tsc --declaration && npm publish"
+  },
+  "author": "Rob D",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-mocks": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap-webpack": "0.0.5",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "font-awesome": "^4.6.3",
+    "font-awesome-webpack": "0.0.4",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.22.0",
+    "jasmine-core": "^2.5.2",
+    "jasmine-node": "^1.14.5",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-spec-reporter": "0.0.26",
+    "karma-typescript-preprocessor": "^0.3.0",
+    "karma-webpack": "^1.8.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.2",
+    "typescript": "^2.0.3",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
+  },
+  "dependencies": {
+    "angular-ui-bootstrap": "^2.1.4",
+    "bootstrap": "^3.3.7"
+  }
+}

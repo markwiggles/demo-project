@@ -1,5 +1,5 @@
 {
-  "name": "nl-seed-frontend",
+  "name": "demo-project",
   "version": "1.0.3",
   "description": "This project should be used a foundation when starting any new Nightlife AngularJS 1.5x project.",
   "main": "index.js",

@@ -19,6 +19,7 @@ module.exports = function(config) {
     files: [
       './node_modules/angular/angular.js',
       './node_modules/angular-mocks/angular-mocks.js',
+      './node_modules/phantomjs-polyfill/bind-polyfill.js',
       './node_modules/angular-sockjs/src/index.js',
       './app/src/shared/web_socket_svc.ts',
       './app/**/*.spec.ts'

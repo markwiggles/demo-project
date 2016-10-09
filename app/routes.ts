@@ -20,4 +20,5 @@ export default function routing($stateProvider: angular.ui.IStateProvider,
       url: '/about',
       template: require('src/main/about.html')
     });
+
 }

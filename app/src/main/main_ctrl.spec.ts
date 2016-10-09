@@ -6,9 +6,9 @@ describe('MainCtrl', () => {
     beforeEach(() => {
         mainCtrl = new MainCtrl();
     });
-    
-    it('should instantiate new controller with page title of "Seed Project". This is an example test.', () => {
-        expect(mainCtrl).toBeDefined();   
-        expect(mainCtrl.pageTitle).toBe(MAIN_TITLE);                     
-    });        
+
+    it('should instantiate new controller with page title of "Demo Project". ', () => {
+        expect(mainCtrl).toBeDefined();
+        expect(mainCtrl.pageTitle).toBe(MAIN_TITLE);
+    });
 });

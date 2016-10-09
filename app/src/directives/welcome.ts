@@ -6,36 +6,26 @@ export default class WelcomeDirective implements ng.IDirective {
     controller;
     link;
     compile;
+    replace;
     firstName: string;
-    require;
 
     constructor() {
         this.restrict = 'AEC';
+        this.replace = true;
         this.scope = {};
         this.template = require('src/directives/welcome.html');
         this.controllerAs = 'wc';
         this.controller = ($scope) => {
             $scope.firstName = 'mark';
         }
-        this.require = "ngModel";
-
         this.compile = (tElem, attrs) => {
-          console.log(tElem);
-          return (scope, elem, attrs, ctrl) => {
-
+          return ($scope, elem, attrs, ctrl) => {
             elem.on('click',() => {
-              scope.firstName = 'fred';
+              $scope.firstName = 'fred';
               ctrl.$setViewValue();
             })
           }
         }
-        // this.link = (scope, elem, attrs, ctrl) => {
-        //
-        //   elem.on('click',() => {
-        //     scope.firstName = 'fred';
-        //     ctrl.$setViewValue();
-        //   })
-        // }
     }
 
 
@@ -43,6 +33,4 @@ export default class WelcomeDirective implements ng.IDirective {
         const directive = () => new WelcomeDirective();
         return directive;
     }
-
-
 }

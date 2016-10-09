@@ -1,4 +1,4 @@
-export const MAIN_TITLE = "Demo Project";
+export const MAIN_TITLE = "Seed Project";
 
 export class MainCtrl {
 
@@ -8,3 +8,4 @@ export class MainCtrl {
         this.pageTitle = MAIN_TITLE;
     }
 }
+

@@ -19,10 +19,9 @@ export default class WelcomeDirective implements ng.IDirective {
             $scope.firstName = 'mark';
         }
         this.compile = (tElem, attrs) => {
-          return ($scope, elem, attrs, ctrl) => {
+          return (scope, elem, attrs, ctrl) => { //link function
             elem.on('click',() => {
-              $scope.firstName = 'fred';
-              ctrl.$setViewValue();
+              console.log('clicked')
             })
           }
         }

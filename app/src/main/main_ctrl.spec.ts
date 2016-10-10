@@ -4,7 +4,7 @@ let mainCtrl: MainCtrl;
 
 describe('MainCtrl', () => {
     beforeEach(() => {
-        mainCtrl = new MainCtrl();
+        // mainCtrl = new MainCtrl();
     });
 
     it('should instantiate new controller with page title of "Demo Project". ', () => {

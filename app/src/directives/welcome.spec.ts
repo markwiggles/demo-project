@@ -7,7 +7,7 @@ describe("WelcomeDirective", () => {
 
 
     beforeEach(angular.mock.module('index'));
-    
+
     beforeEach(() => {
         inject(function(_$compile_, _$rootScope_) {
             $rootScope = _$rootScope_;
@@ -19,6 +19,6 @@ describe("WelcomeDirective", () => {
         // Compile a piece of HTML containing the directive
         var element = $compile("<welcome></welcome>")($rootScope);
         $rootScope.$digest();
-        expect(element.html()).toContain("Welcome");
+        expect(element.html()).toContain("Welcome mark");
     });
 });

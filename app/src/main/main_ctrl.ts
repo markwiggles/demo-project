@@ -7,16 +7,16 @@ export class MainCtrl {
     public pageTitle: string;
     public content: string;
 
-
-    constructor() {
+    static $inject = ['GroupsService'];
+    constructor(private groupsService: GroupsService) {
         this.pageTitle = MAIN_TITLE;
 
-        GroupsService.getInfo().then(function(response) {
+        groupsService.getInfo().then(function(response) {
             console.log(response);
         })
 
         // this.content = GroupsService.getGroupInfo();
-        // 
+        //
         // console.log('GS: ', GroupsService.getGroupInfo());
         // this.groupsList.get().then(function(response) {
         //     console.log("Response ", response);

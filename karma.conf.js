@@ -18,10 +18,12 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       './node_modules/angular/angular.js',
+      './node_modules/angular-ui-router/release/angular-ui-router.js',
+      './node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js',
       './node_modules/angular-mocks/angular-mocks.js',
       './node_modules/phantomjs-polyfill/bind-polyfill.js',
       './node_modules/angular-sockjs/src/index.js',
-      './app/src/shared/web_socket_svc.ts',
+      // './app/src/shared/web_socket_svc.ts',
       './app/**/*.spec.ts'
     ],
 

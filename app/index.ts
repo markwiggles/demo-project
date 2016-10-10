@@ -6,7 +6,10 @@ import WelcomeDirective from './src/directives/welcome';
 import HelloComponent from './src/components/hello';
 
 
-angular.module('index', ['ui.router', 'ui.bootstrap'])
+var indexApp = angular.module('index', ['ui.router', 'ui.bootstrap'])
     .config(routing)
     .directive('welcome', WelcomeDirective.getFactory())
     .component('hello', new HelloComponent());
+
+
+export default indexApp;

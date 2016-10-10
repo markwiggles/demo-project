@@ -17,8 +17,7 @@ export default class HelloComponent implements ng.IComponentOptions {
         this.template = require('src/components/hello.html');
         this.controllerAs = "hello";
         this.controller = ($scope) => {
-            $scope.greeting = "hey whats up?";
-            console.log(this);
+            $scope.greeting = "hello there";
         }
     }
 }

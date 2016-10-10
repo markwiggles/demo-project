@@ -1,1 +1,22 @@
-<h2>{{greeting}}</h2>
+<div>
+
+    <h2>{{}}</h2>
+
+    <form name="myForm">
+        <input type="text" ng-model="firstName" ng-required="string">
+        <!-- <span class="error" ng-show="myForm.input.$error.required">
+            Required!</span>
+        <span class="error" ng-show="myForm.input.$error.pattern">
+            Single word only!</span> -->
+    </form>
+
+</div>
+<!-- [name="string"]
+       [required="string"]
+       [ng-required="string"]
+       [ng-minlength="number"]
+       [ng-maxlength="number"]
+       [pattern="string"]
+       [ng-pattern="string"]
+       [ng-change="string"]
+       [ng-trim="boolean"]

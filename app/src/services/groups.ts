@@ -15,10 +15,10 @@ class GroupsService {
         this.httpService = $http;
     }
 
-    getInfo(): ng.IPromise<Object[]> {
+    get(): ng.IPromise<Object[]> {
         var self = this;
         var deffered = self.qService.defer();
-        self.httpService.get('./api/values.json', this.config).then((result: any): void => {
+        self.httpService.get(this.urlBase, this.config).then((result: any): void => {
             if (result.status === 200) {
                 deffered.resolve(result.data);
             } else {
